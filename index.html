@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jenny_photo</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <style>
+        @font-face {
+            font-family: 'Skellyman';
+            src: url('../фото на сайт/fonts/ofont.ru_Skellyman.ttf');
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li> <button class="nav-item"> <a href="index.html"> Главная </a> </button> </li>
+                    <li> <button class="nav-item"> <a href="main_sections_HTML/about_jenny.html"> Обо
+                                мне </a> </button></li>
+                    <li> <button class="nav-item"> <a href="main_sections_HTML/price.html"> Стоимость
+                                услуг </a> </button></li>
+                    <li> <button class="nav-item"> <a href="https://t.me/JennyJenny17"> Записаться на фотосессию </a>
+                        </button> </li>
+                    <li> <button class="nav-item"> <a href="main_sections_HTML/examples.html"> Пример
+                                фотосессии </a> </button> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="main">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css">
+        <script>
+            $(document).ready(function () {
+                function setJustifiedGalleryOptions() {
+                    var justifyThreshold = 0.5;
+
+                    // Adjust justifyThreshold for mobile screens
+                    if (window.innerWidth <= 480) {
+                        justifyThreshold = 0.9;
+                    }
+
+                    // Destroy the existing Justified Gallery instance
+                    if ($('.justified-gallery').data('justifiedGallery')) {
+                        $('.justified-gallery').justifiedGallery('destroy');
+                    }
+
+                    // Initialize Justified Gallery with the updated options
+                    $('.justified-gallery').justifiedGallery({
+                        rowHeight: 150,
+                        lastRow: 'center',
+                        margins: 2,
+                        captions: false,
+                        cssAnimation: true,
+                        imagesAnimationDuration: 300,
+                        fixedHeight: true,
+                        justifyThreshold: justifyThreshold,
+                        waitThumbnailsLoad: true,
+                        lazyLoad: true
+                    });
+                }
+
+                setJustifiedGalleryOptions();
+
+                // Update the options when the window is resized
+                $(window).resize(function () {
+                    setJustifiedGalleryOptions();
+                });
+            });
+
+
+        </script>
+        <div class="grid-container justified-gallery">
+            <div class="image-grid">
+                <a href="HTML/html_orange7.html">
+                    <img src="colours/orange_small/7orange_small.PNG" alt="Asian Girl">
+                </a>
+            </div>
+
+            <div class="image-grid">
+                <a href="HTML/html_orange1.html">
+                    <img src="colours/orange_small/1orange_small.PNG" alt="Autumn">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_dragon_pizza.html">
+                    <img src="colours/orange_small/yello_dragon.JPG" alt="Dragon and pizza">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_orange5.html">
+                    <img src="colours/orange_small/2orange.PNG" alt="Portrait">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_moscow.html">
+                    <img src="colours/nude_small/moscow_small.JPG" alt="Moscow MGU">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_orange5.html">
+                    <img src="colours/orange_small/5orange_small.JPG" alt="Portrait">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_orange3.html">
+                    <img src="colours/orange_small/6orange_small.PNG" alt="Saint-Petersburg">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_orange4.html">
+                    <img src="colours/orange_small/9orange_small.PNG" alt="Objects Shooting">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_jenny.html">
+                    <img src="colours/nude_small/jenny_pion.PNG" alt="Lemon and peony">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_orange4.html">
+                    <img src="colours/orange_small/4orange.PNG" alt="Objects Shooting">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_orange10.html">
+                    <img src="colours/orange_small/10orange_small.PNG" alt="Portrait of asian girl">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_orange12.html">
+                    <img src="colours/orange_small/12orange.JPG" alt="Pumpkin">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_sun_and_flowers.html">
+                    <img src="colours/black_white/sun_and_flowers.PNG" alt="Sun and flowers">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_lemon_peony.html">
+                    <img src="colours/nude_small/lemon_pion_small.PNG" alt="Lemon and peony">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_yellow_jenny.html">
+                    <img src="colours/orange_small/Jenny2.JPG" alt="Jenny">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_lemon_peony.html">
+                    <img src="colours/orange_small/pinkflowers_ small.PNG" alt="Pink flowers">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_nude_3-4.html">
+                    <img src="colours/nude_small/nude_3_small.PNG" alt="Dragons">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_golden_autmn.html">
+                    <img src="colours/black_white/orange_autmn.JPG" alt="Golden autumn">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_nude_3-4.html">
+                    <img src="colours/nude_small/nude_4.PNG" alt="Dragons">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_nail_artist.html">
+                    <img src="colours/nude_small/stylishroom_small.JPG" alt="Stylish room">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_nude-cat-dragon.html">
+                    <img src="colours/nude_small/catFiji.JPG" alt="Cat">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_yellow_jenny.html">
+                    <img src="colours/nude_small/Jenny1_small.JPG" alt="Jenny">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_orange12.html">
+                    <img src="colours/orange_small/13orange_small.JPG" alt="Dragons">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_orange8.html">
+                    <img src="colours/orange_small/8orange_small.JPG" alt="Dragons">
+                </a>
+            </div>
+
+            <div class="image-grid">
+                <a href="HTML/html_orange8.html">
+                    <img src="colours/orange_small/11orange.JPG" alt="Fish">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_yellow_jenny_balloon.html">
+                    <img src="colours/nude_small/jenny_balloon_small.PNG" alt="Jenny and Balloon">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_pink_jenny.html">
+                    <img src="colours/nude_small/JennyDragonsPink_small.jpg" alt="Jenny and Dragons">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_cat.html">
+                    <img src="colours/nude_small/nude_cat_small.JPG" alt="Cat">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_pink_jenny.html">
+                    <img src="colours/orange_small/JennyDragonPink2.JPG" alt="Jenny and Dragons">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_yellow_jenny_balloon.html">
+                    <img src="colours/orange_small/terrace.JPG" alt="Золотая очень">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_jenny_pink.html">
+                    <img src="colours/orange_small/JennyPink.JPG" alt="Jenny">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_spb.html">
+                    <img src="colours/nude_small/spb.JPG" alt="SPb">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_nude_manicurist.html">
+                    <img src="colours/orange_small/manicurist.JPG" alt="Manicurist">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_pink.html">
+                    <img src="colours/orange_small/pinkflower.JPG" alt="Pink Flowers">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_pink.html">
+                    <img src="colours/black_white/jenny_with_pink_hair.PNG" alt="Jenny with pink hair">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_orange3.html">
+                    <img src="colours/orange_small/3oranege.JPG" alt="Saint-Petersburg">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_sakura.html">
+                    <img src="colours/nude_small/Sakura.PNG" alt="Sakura">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_nude_manicurist.html">
+                    <img src="colours/nude_small/manicurist-2_small.JPG" alt="Manicurist">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_winter_art.html">
+                    <img src="colours/nude_small/winter_art.JPG" alt="Winter art">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_nude-cat-dragon.html">
+                    <img src="colours/nude_small/nude_cat-dragon_small.PNG" alt="Cat and Dragon">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_nude5-6-7.html">
+                    <img src="colours/nude_small/nude_6_small.JPG" alt="Flowers">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_cat_peaches.html">
+                    <img src="colours/nude_small/fiji_small.JPG" alt="Cat and Peaches">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_green_and_pink.html">
+                    <img src="colours/black_white/green_and_pink_landscape.PNG" alt="Green and pink">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_nude5-6-7.html">
+                    <img src="colours/nude_small/nude_5.PNG" alt="Flowers">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_nude5-6-7.html">
+                    <img src="colours/nude_small/nude_7.JPG" alt="Flowers">
+                </a>
+            </div>
+
+            <div class="image-grid">
+                <a href="HTML/html_jenny_and_lemon.html">
+                    <img src="colours/nude_small/Jenny_lemon_small.jpg" alt="Jenny and Lemon">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_nail_artist.html">
+                    <img src="colours/nude_small/nail_master.JPG" alt="Manicurist in stylish room">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_jenny_and_flowers.html">
+                    <img src="colours/nude_small/jenny_tulip_small.PNG" alt="Jenny and tulip">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_heart.html">
+                    <img src="colours/nude_small/heart_small.JPG" alt="Heart">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_sunflower.html">
+                    <img src="colours/yello/sunflowers.JPG" alt="Sunflower">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_rainbow_and_dragon.html">
+                    <img src="colours/black_white/rainbow.JPG" alt="Raiwbow">
+                </a>
+            </div>
+
+            <div class="image-grid">
+                <a href="HTML/html_cosy_winter.html">
+                    <img src="colours/nude_small/winter_cosy_small.JPG" alt="Cosy Winter">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_cosy_winter.html">
+                    <img src="colours/orange_small/cat_macaroons.JPG" alt="Cat and cat_macaroons">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_dragon_travelers.html">
+                    <img src="colours/nude_small/DragonTravelers_small.PNG" alt="Dragon Travelers">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_dragon_travelers.html">
+                    <img src="colours/orange_small/BlackCat.JPG" alt="Dragon Travelers">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_pink_clouds_moscow.html">
+                    <img src="colours/black_white/pink_in_moscow.JPG" alt="Pink clouds in Moscow">
+                </a>
+            </div>
+            <div class="image-grid">
+                <a href="HTML/html_macaroons_and_coffee.html">
+                    <img src="colours/black_white/macaroons_and_coffee.PNG" alt="Macaroons and coffee">
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer> </footer>
+</body>
+
+</html>

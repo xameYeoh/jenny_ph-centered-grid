@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="../main_sections_HTML/about_jenny.css">
+    <style>
+    @font-face {
+    font-family: 'Skellyman';
+    src: url('../fonts/ofont.ru_Skellyman.ttf')
+    }
+    </style>
+    <style>
+    @font-face {
+    font-family: 'CutOutOFFont';
+    src: url('../fonts/ofont.ru_CutOut.ttf')
+    }
+    </style>
+    <style>
+    body {
+    background-image: linear-gradient(to left, #ffc0cd, white);
+    /* background-image: url('../main_sections_HTML/pink_background.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat; */
+    }
+      </style>
+</head>
+<body>
+    <div> 
+        <button class="back"> <a class="no-underline" href="../index.html"> Главная </button> </a> 
+    </div>
+    <section> 
+        <img id="mainPh" src="../colours/my photo/main_photo.JPG">
+        <div class="text">
+        <p> Хэй, привет! Меня зовут Женя, я генетик, и в свободное от науки время 
+            надеваю костюм суперженщины  фотографа и снимаю себя, других людей, еду, 
+            животных, интерьеры и город — я просто обожаю это! Самое крутое в фотографии 
+            лично для меня это общение с новыми людьми: узнавать, от чего горят их глаза, 
+            и ловить эти моменты, показывая какие все уникальные и прекрасные. Может быть ты, 
+            та или тот, кто читает эти строки, начинаешь свое дело — тогда я могу снять твое 
+            рабочее место, товары и тебя за работой, чтобы на твоем сайте или в инстаграме 
+            было красиво и много заказов. Или ты хочешь подарить впечатления себе или близкому 
+            человеку в форме фотосессии — я могу помочь тебе с образом и местом, мы прогуляемся 
+            и выпьем кофе, а на следующий день подарок будет уже доставлен. 
+            Буду рада познакомиться и вместе замутить что-то крутое!
+        </p> 
+
+        </div>
+        <div class="button-wrapper">
+        <button class="button"> <a class="no-underline" href="https://t.me/JennyJenny17"> Записаться </a></button>
+        </div>
+    </section>
+    <section id="photo">
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script> 
+        <script id="photo">
+            document.addEventListener('DOMContentLoaded', function() {
+              var grid = document.querySelector('.grid');
+              var msnry = new Masonry(grid, {
+                itemSelector: '.image-grid',
+                columnWidth: 120, /* Set a fixed width for the columns */
+                gutter: 5,
+                fitWidth: true,
+                transitionDuration: '0.3s'
+              });
+            });
+          </script>
+    <div class="grid-container grid">
+        <div class="image-grid">
+            <a href="..">
+                <img src="../colours/my photo/1.JPG" alt="..">
+            </a>
+        </div>
+        <div class="image-grid">
+            <a href="..">
+                <img src="../colours/pink/JennyDragonsPink.jpg" alt="..">
+            </a>
+        </div>
+        <div class="image-grid">
+            <a href="..">
+                <img src="../colours/my photo/IMG_0795.JPG" alt="..">
+            </a>
+        </div>
+        <div class="image-grid">
+            <a href="..">
+                <img src="../colours/my photo/IMG_0799.JPG" alt="..">
+            </a>
+        </div>
+    </div>
+    </section>
+
+    
+</body>
+</html>
